@@ -13,6 +13,9 @@ https://wandb.ai/maximilian-hansinger-bayernwerk/nyc_airbnb?nw=nwusermaximilianh
 Github: <br>
 https://github.com/mhansinger/build-ml-pipeline-for-short-term-rental-prices/ 
 
+## Pipeline reference
+https://wandb.ai/maximilian-hansinger-bayernwerk/nyc_airbnb/artifacts/clean_sample/clean_sample.csv/v1/lineage
+
 
 ## Table of contents
 
