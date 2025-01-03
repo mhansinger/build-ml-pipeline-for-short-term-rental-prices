@@ -100,6 +100,11 @@ def go(args):
     # HINT: use mlflow.sklearn.save_model
     rf_storage_dir = 'random_forest_dir'
     #signature = infer_signature(X_val, y_pred)
+
+    # Log metrics
+    mlflow.log_metric("mae", mae)
+    mlflow.log_metric("r2",r_squared)
+    
     mlflow.sklearn.save_model(
         sk_model = sk_pipe,
         path = rf_storage_dir,
