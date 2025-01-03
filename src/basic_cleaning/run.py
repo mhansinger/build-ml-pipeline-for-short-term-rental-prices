@@ -45,6 +45,7 @@ def go(args):
     
     # drop rows in the dataset that are not in the proper geolocation
     logger.info('Drop rows in the dataset that are not in the proper geolocation')
+    # added
     idx = df_clean['longitude'].between(-74.25, -73.50) & df_clean['latitude'].between(40.5, 41.2)
     df_clean = df_clean[idx].copy()
     
