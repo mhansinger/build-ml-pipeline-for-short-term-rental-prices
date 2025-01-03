@@ -56,8 +56,8 @@ def go(args):
     logger.info(f'W&B logging artifact {args.output_artifact}') 
     artifact = wandb.Artifact(
         name=args.output_artifact,
-        type=args.output_artifact,
-        description=args.output_artifact_description,
+        type=args.output_type,
+        description=args.output_description,
     )
     artifact.add_file(args.output_artifact)
     run.log_artifact(artifact)
